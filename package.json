@@ -1,16 +1,11 @@
 {
   "name": "x-clone",
   "version": "1.0.0",
-  "description": "",
   "main": "backend/server.js",
   "scripts": {
-    "install": "cd frontend && npm install && cd ../backend && npm install",
-    "build": "cd frontend && npm run build",
+    "postinstall": "cd frontend && npm install && npm run build",
     "start": "node backend/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.6.1",
@@ -19,8 +14,7 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.15.2",
-    "concurrently": "^9.2.0"
+    "mongoose": "^8.15.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
