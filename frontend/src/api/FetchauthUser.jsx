@@ -1,7 +1,6 @@
 export const fetchAuthUser = async () => {
     const res = await fetch(`${Baseurl}auth/me`, {
         method: "GET",
-        credentials: "include",
         headers: {
             "Content-Type": "application/json",
         },
